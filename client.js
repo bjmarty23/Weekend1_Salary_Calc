@@ -13,26 +13,33 @@ class Employee{
 }//end constuctor
 }// end employee
 
+$(document).ready(readyNow);
+function readyNow(){
+  console.log('doc ready');
+  onClick();
+}// end doc ready
+
+function onClick(){
+  console.log('on click');
+  $( '#submitButton').on('click',newEmployee);
+//end button
+}//end onClick func
+
 function newEmployee( first, last, id, title, salary) {
-  table.push( new Employee ( $('#firstIn').val(), $('#lastIn').val(), $('#idIn').val(), $('#titleIn').val(), $('#salaryIn').val()));
+  console.log('newEmployee');
+  table.push( new Employee ( $('#firstIn').val(), $('#lastIn').val(), $('#idIn').val(), $('#titleIn').val(), $('#salaryIn').val() ));
   console.log($('#firstIn').val());
-  updateEmployees();
-}
+  updateTable();
+}//end newEmployee
 
-$ (document).ready (function(){
-
-$( '#submitButton').on('click', function(){
-  newEmployee( );
-
-});//end on click
-});// end doc ready
 //update this function to append
-function updateEmployees(){
+function updateTable(){
+  console.log('updateTable');
   let outputElement = $('#employeeList');
   outputElement.empty();
   for( employee of table){
   outputElement.append('<li>'+ employee.first + ' ' + employee.last + ' ' + employee.id + ' ' + employee.title + ' ' + employee.salary + ' ' + '</li>');// figure out how to input these into my table.
-  console.log('something');
+  console.log($('#lastIn').val());
 }// end for loop
 }//end updateEmployees func
 

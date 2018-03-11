@@ -1,3 +1,25 @@
+
+html {
+  font-size: 20px;
+  font-family: 'Sedgwick Ave Display', cursive, helvetica;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+p, li {
+  text-size: 20px;
+  font color:
+}
 html {
   background-color: magenta;
+}
+body {
+  width: 600px;
+  margin: 20px auto;
+  background-color: pink;
+  padding: 20px 20px 20px 20px;
+  border: 5px solid black;
 }
