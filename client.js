@@ -35,15 +35,15 @@ function newEmployee( first, last, id, title, salary) {
 //update this function to append
 function updateTable(){
   console.log('updateTable');
-  let outputElement = $('#employeeList');
+  let outputElement = $('#tableBody');
   outputElement.empty();
   for( employee of table){
-  outputElement.append('<li>'+ employee.first + ' ' + employee.last + ' ' + employee.id + ' ' + employee.title + ' ' + employee.salary + ' ' + '</li>');// figure out how to input these into my table.
-  console.log($('#lastIn').val());
+  outputElement.append ( '<tr><td>' + employee.first + '</td><td>' + employee.last + '</td><td>' + employee.id + '</td><td>' + employee.title + '</td><td>' + employee.salary + '</td></tr>');
+  //console.log($('#lastIn').val());
 }// end for loop
 }//end updateEmployees func
 
 
-
+//This is the mini challenge borders for the table
 
 console.log('bottom');

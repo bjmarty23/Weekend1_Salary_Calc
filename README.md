@@ -1,5 +1,5 @@
 # Weekend Challenge 1: Salary Calculator
-Create an application that records employee salaries and adds salaries up to report monthly costs. 
+Create an application that records employee salaries and adds salaries up to report monthly costs.
 
 ## Topics Covered
 - JavaScript
@@ -7,9 +7,11 @@ Create an application that records employee salaries and adds salaries up to rep
 
 ## Assignment
 
-The application should have an input form that collects _employee first name, last name, ID number, job title, annual salary_.
+[x]The application should have an input form that collects _employee first name, last name, ID number, job title, annual salary_.
 
-A 'Submit' button should collect the form information, store the information to calculate monthly costs, append information to the DOM and clear the input fields. Using the stored information, calculate monthly costs and append this to the to DOM. If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
+[x]A 'Submit' button should collect the form information,
+[x]store the information to calculate monthly costs, append information to the DOM and clear the input fields. []Using the stored information, calculate monthly costs and append this to the to DOM. 
+[]If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
 
 ### Files Provided
 No files have been provided. Fork and clone this repository or create a new GitHub repository to get started. Make sure to commit regularily!
@@ -29,7 +31,7 @@ Create an `Employee` class to store the information about each new employee in a
 
 Once the employee is deleted, update the total spend on salaries account for this employee's removal. This will require that the logic knows which element was removed. Look into jQuery's .data() function. You will need to do something both when the employee is added and when they are deleted.
 
-Add styling or extra functionality that fits with the theme of this assignment. 
+Add styling or extra functionality that fits with the theme of this assignment.
 
 ## Reminder About Modes
 
