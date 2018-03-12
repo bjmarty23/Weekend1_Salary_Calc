@@ -20,7 +20,7 @@ body {
   width: 800px;
   margin: 20px auto;
   background-color: cornflowerblue;
-  padding: 20px 100px 500px 100px;
+  padding: 20px 100px 100px 100px;
   border: 2px solid black;
 
 }
@@ -41,7 +41,7 @@ th, td {
 }
 
 tr:nth-child(even){
-  background-color: #f2f2f2;
+  background-color: lightskyblue;
 }
 
 th {
@@ -58,4 +58,5 @@ button {
   padding-left: 40px;
   padding-right: 35px;
   text-align: center;
+  font-family: fantasy;
 }

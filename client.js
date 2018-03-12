@@ -43,6 +43,10 @@ function updateTable(){
 }// end for loop
 }//end updateEmployees func
 
+function totalMonthly() {
+  $('#totalMonthly').val().append('$' + salaryIn + (toFixed(2)));
+
+}
 
 //This is the mini challenge borders for the table
 
