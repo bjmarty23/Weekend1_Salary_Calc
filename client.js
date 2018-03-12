@@ -30,6 +30,7 @@ function newEmployee( first, last, id, title, salary) {
   table.push( new Employee ( $('#firstIn').val(), $('#lastIn').val(), $('#idIn').val(), $('#titleIn').val(), $('#salaryIn').val() ));
   console.log($('#firstIn').val());
   updateTable();
+  money();
 }//end newEmployee
 
 //update this function to append
@@ -39,15 +40,26 @@ function updateTable(){
   outputElement.empty();
   for( employee of table){
   outputElement.append ( '<tr><td>' + employee.first + '</td><td>' + employee.last + '</td><td>' + employee.id + '</td><td>' + employee.title + '</td><td>' + employee.salary + '</td></tr>');
+
   //console.log($('#lastIn').val());
 }// end for loop
 }//end updateEmployees func
 
-function totalMonthly() {
-  $('#totalMonthly').val().append('$' + salaryIn + (toFixed(2)));
-
+function money(){
+  let totalSalary = 0;
+  let outputElement = $('#total');
+  //outputElement.empty();
+for (salary of table) {
+  totalSalary += parseInt(employee.salary);
+  outputElement.empty();
+  outputElement.append('Total Monthly Costs:$' + totalSalary.toFixed(2));
+  //outputElement.append( totalSalary);
+console.log('totalSalary', totalSalary);
+if (totalSalary > 20000) {
+  outputElement.css ('background-color', 'red');
 }
-
+}
+}
 //This is the mini challenge borders for the table
 
 console.log('bottom');
