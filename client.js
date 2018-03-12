@@ -17,6 +17,7 @@ $(document).ready(readyNow);
 function readyNow(){
   console.log('doc ready');
   onClick();
+
 }// end doc ready
 
 function onClick(){
@@ -57,9 +58,17 @@ for (salary of table) {
 console.log('totalSalary', totalSalary);
 if (totalSalary > 20000) {
   outputElement.css ('background-color', 'red');
+  removeEmployee();
 }
 }
 }
 //This is the mini challenge borders for the table
-
+function removeEmployee(){
+  $('#deleteButton').on('click', gone);
+  console.log('gone', gone);
+  gone();
+}
+ function gone(){
+   table.pop(newEmployee( $('#firstIn').val(), $('#lastIn').val(), $('#idIn').val(), $('#titleIn').val(), $('#salaryIn').val() ));
+ }
 console.log('bottom');
