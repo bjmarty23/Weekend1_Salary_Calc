@@ -10,8 +10,8 @@ Create an application that records employee salaries and adds salaries up to rep
 [x]The application should have an input form that collects _employee first name, last name, ID number, job title, annual salary_.
 
 [x]A 'Submit' button should collect the form information,
-[x]store the information to calculate monthly costs, append information to the DOM and clear the input fields. []Using the stored information, calculate monthly costs and append this to the to DOM. 
-[]If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
+[x]store the information to calculate monthly costs, append information to the DOM and clear the input fields. [x]Using the stored information, calculate monthly costs and append this to the to DOM.
+[x]If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
 
 ### Files Provided
 No files have been provided. Fork and clone this repository or create a new GitHub repository to get started. Make sure to commit regularily!
@@ -48,3 +48,24 @@ Stretch | optional, stretches your understanding and may require additional rese
 
 ## Assignment Submission
 Check in your repo, then turn in your work via the Prime Academy Assignment Application at [http://primeacademy.io](http://primeacademy.io), as usual and don't hesitate to hit up the Slack channel as needed!
+
+# Notes from live walk through
+
+salary calculate
+-takes userinput and appendsit to the screen
+calculates monthly ccost of all employeeList
+
+## to do list
+[]get files set up html
+[]create single input
+[]calc salary based on input
+[]append to DOM
+[]ass remaining fields
+[]create hmtl tanle and append it
+[]toggle the toal back ground based salary_
+[]add delete deleteButton
+[]added a class  of two
+[]styling
+
+
+ Moving into html and js files for 'notes'
